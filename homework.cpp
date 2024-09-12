@@ -4,7 +4,7 @@
 template <typename T, std::size_t N>
 class StaticArray {
 private:
-    T arr[N];  // C-style array
+    T arr[N];
 
 public:
 
