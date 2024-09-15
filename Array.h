@@ -3,10 +3,10 @@
 
 template <typename T, std::size_t N>
 class StaticArray {
-private:
+public:
     T arr[N];
 
-public:
+private:
     StaticArray(std::initializer_list<T> initList) {
         if (initList.size() != N) {
             throw std::length_error("Initializer list size does not match array size.");
